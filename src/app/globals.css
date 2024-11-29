@@ -1,0 +1,280 @@
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(241, 223, 241);
+  color: rgb(0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(212, 165, 210);
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+/* Header */
+.header {
+  background-color: rgb(224, 90, 168);
+  color: rgb(252, 252, 252);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .log {
+  font-size: 35px;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgb(122, 5, 64);
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+}
+
+.header .nav a {
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgb(122, 5, 64);
+}
+
+.header .nav a:hover {
+  color: black;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(224, 90, 168);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  text-shadow: 2px 2px 5px rgb(112, 6, 59);
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Hero Section */
+.hero {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 60px;
+  color: hotpink;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero h1, .hero h2 {
+  font-size: 50px;
+  text-shadow: 2px 2px 5px rgb(172, 46, 109);
+}
+
+.hero h2 {
+  color: rgb(211, 77, 144);
+}
+
+.hero p {
+  font-size: 20px;
+  margin-top: 10px;
+  color: white;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: rgb(211, 77, 144);
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  text-shadow: 2px 2px 5px rgb(155, 42, 98);
+  color: white;
+}
+
+.hero button:hover {
+  background-color: rgb(206, 94, 150);
+  color: black;
+}
+
+/* About Section */
+.about {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.abcn {
+  max-width: 520px;
+  text-align: left;
+  background: rgb(221, 124, 172);
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.abcn p {
+  padding-top: 20px;
+}
+
+.head {
+  font-size: 35px;
+  font-style: italic;
+  text-shadow: 2px 2px 5px rgb(122, 5, 64);
+}
+
+/* Ring Section */
+.ringes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.ringcard {
+  background-color: rgb(214, 168, 191);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgb(172, 46, 109);
+  text-align: center;
+}
+
+.ringcard img {
+  width: 100%;
+  height: 300px; /* Ensures all images have the same height */
+  object-fit: cover; /* Crops the image to fit within the container */
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+.ringcard img:hover {
+  transform: scale(0.9); /* Shrink to 90% size */
+}
+ 
+.ringcard h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.ringcard div {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.ringcard button {
+  background-color: rgb(172, 46, 109);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ringcard button:hover {
+  background-color: rgb(143, 30, 90);
+  color: black;
+  font-weight: bold;
+}
+ 
+/* contact page */
+.conf{
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgb(250, 183, 218);
+  box-shadow: 0 0 10px rgb(192, 62, 127);
+
+}
+
+.conf input,
+.conf textarea{
+  width: 100%;
+  padding:10px ;
+  margin:10px 0;
+  border:1px solid rgb(240, 184, 223);
+  border-radius: 6px;
+}
+
+.conf button{
+  padding: 10px 20px;
+  background-color: rgb(221, 137, 179);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+.conf button:hover{
+  background-color: rgb(219, 57, 138);
+  color: black;
+}
+
+
+
+
+/* responsive style */
+
+@media (max-width: 760px) {
+   .header {
+    flex-direction: column;
+    text-align: center;
+   }
+   .header .log {
+    margin-bottom: 10px;
+
+   }
+   .header .nav {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+   }
+   .hero {
+    height: 70vh;
+    padding: 20px;
+    text-align: center;
+   }
+   .hero h1 {
+    font-size: 36px;
+   }
+   .hero p{
+    font-size: 18px;
+   }
+   .hero button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+   }
+
+   .ringes {
+    grid-template-columns: 1fr;
+    margin: 20px;
+   }
+   .about {
+    padding: 40px 20px;
+    height: auto;
+   }
+   .abcn {
+    width: 100%;
+    padding: 20px;
+   }
+   .conf {
+    margin: 20px;
+    padding: 20px;
+   }
+}
